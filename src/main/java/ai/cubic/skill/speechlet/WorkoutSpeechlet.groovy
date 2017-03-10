@@ -17,12 +17,13 @@ class WorkoutSpeechlet implements Speechlet {
     }
 
     SpeechletResponse onLaunch(LaunchRequest request, Session session) throws SpeechletException {
-        log.info("onLaunch requestId={}, sessionId={}", request.getRequestId(),
+        log.info("onLaunch: requestId={}, sessionId={}", request.getRequestId(),
                 session.getSessionId());
         return intentManager.welcomeText
     }
 
     SpeechletResponse onIntent(IntentRequest request, Session session) throws SpeechletException {
+        log.info("Intent: ${request?.intent?.name} for request: ${request.getRequestId()} with session: ${session.getSessionId()}")
         log.info("onIntent requestId={}, sessionId={}", request.getRequestId(),
                 session.getSessionId());
         return intentManager.processIntent(request)
