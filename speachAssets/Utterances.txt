@@ -1,0 +1,34 @@
+DefaultWelcomeIntent	good day
+DefaultWelcomeIntent	good evening
+DefaultWelcomeIntent	hello
+DefaultWelcomeIntent	hi
+Help	help
+Help	help me
+Help	i don't know
+Help	i don't know exersises
+Help	i don't know what to do
+Help	i don't understand
+Help	support
+Help	what can you do
+Cancel	cancel
+Cancel	exit
+Cancel	i am not ready
+Cancel	no
+Cancel	no i am not ready
+Cancel	no, i am not ready
+Cancel	not ready
+Cancel	quit
+Cancel	shutup
+Cancel	stop
+Ready	begin
+Ready	i am ready
+Ready	i am ready to begin
+Ready	i am ready to start
+Ready	i m ready
+Ready	i'm ready
+Ready	let s go
+Ready	let s start
+Ready	let's go
+Ready	let's start
+Ready	ready
+Ready	start
