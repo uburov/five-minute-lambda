@@ -17,96 +17,98 @@ class IntentManager {
     private static final String WORKOUT = '''
 <speak>
 \t<p>First excercise: full plank</p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<audio src="https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/beep.mp3" />
 \t<break time="10s"/>
-\t50 seconds left <break time="10s"/>
-\t40 seconds <break time="10s"/>
-\t30 seconds <break time="10s"/>
-\t20 seconds <break time="10s"/>
-\t10 seconds <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t50 seconds left <break time="7s"/>
+\t40 seconds <break time="8s"/>
+\t30 seconds <break time="8s"/>
+\t20 seconds <break time="8s"/>
+\t10 seconds <break time="8s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 
-\t10 seconds rest <break time="7s"/>
+\t10 seconds rest <break time="5s"/>
 \t<p>Elbow plank, in </p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<audio src="https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/beep.mp3" />
 \t<break time="10s"/>
-\t20 seconds <break time="10s"/>
+\t20 seconds <break time="7s"/>
 \t10 seconds <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 
-\t10 seconds rest <break time="7s"/>
+\t10 seconds rest <break time="5s"/>
 \t<p>One leg plank, in </p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<audio src="https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/beep.mp3" />
-\t<break time="10s"/>
-\t10 seconds left <break time="7s"/>
-\t<p>Change the leg in</p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
-\t<break time="10s"/>
-\t10 seconds left <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t<break time="8s"/>
+\t10 seconds left <break time="5s"/>
+\t<p>Change the leg, in</p>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
+\t<break time="8s"/>
+\t10 seconds left <break time="6s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<p>Good job!</p>
+\t<break time="600ms"/>
 
-\t10 seconds rest <break time="7s"/>
+\t10 seconds rest <break time="5s"/>
 \t<p>Side plank, in </p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<audio src="https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/beep.mp3" />
 \t<break time="10s"/>
-\t20 seconds left <break time="10s"/>
-\t10 seconds <break time="7s"/>
-\t<p>Switch sides in </p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t20 seconds left <break time="6s"/>
+\t10 seconds <break time="6s"/>
+\t<p>Switch sides, in </p>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \tSwitch! <break time="3s"/>
 \t<break time="10s"/>
-\t20 seconds left <break time="10s"/>
-\t10 seconds <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t20 seconds left <break time="6s"/>
+\t10 seconds <break time="6s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 
-\t10 seconds rest <break time="7s"/>
+\t10 seconds rest <break time="5s"/>
 \t<p>Full plank, in </p>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \t<audio src="https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/beep.mp3" />
 \t<break time="10s"/>
-\t20 seconds left <break time="10s"/>
-\t10 seconds left <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t20 seconds left <break time="6s"/>
+\t10 seconds left <break time="6s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 
-\t10 seconds rest and the last, elbow plank<break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t10 seconds rest and the last, elbow plank<break time="4s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
+\tStart!
 \t<break time="10s"/>
-\t20 seconds left <break time="10s"/>
-\t10 seconds  <break time="7s"/>
-\t3 <break time="1s"/>
-\t2 <break time="1s"/>
-\t1 <break time="1s"/>
+\t20 seconds left <break time="6s"/>
+\t10 seconds  <break time="6s"/>
+\t3 <break time="600ms"/>
+\t2 <break time="600ms"/>
+\t1 <break time="600ms"/>
 \tStop!
 \t<p>Congratulations! Your 5-minute plank workout is complete! See you tomorrow!</p>
 </speak>'''

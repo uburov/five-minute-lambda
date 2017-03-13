@@ -1,6 +1,7 @@
 package ai.cubic.skill.speechlet
 
 import ai.cubic.skill.manager.IntentManager
+import co.voicelabs.sdk.alexa.VoiceInsights
 import com.amazon.speech.speechlet.*
 import groovy.util.logging.Slf4j
 
@@ -9,11 +10,14 @@ import groovy.util.logging.Slf4j
  */
 @Slf4j
 class WorkoutSpeechlet implements Speechlet {
+    private static String voiceLabsToken = "24492400-07ce-11a7-2aa4-0e61e4c2ee12"
+    private VoiceInsights voiceInsights = null
     private static IntentManager intentManager = new IntentManager()
 
     void onSessionStarted(SessionStartedRequest request, Session session) throws SpeechletException {
         log.info("onSessionStarted requestId={}, sessionId={}", request.getRequestId(),
                 session.getSessionId());
+        voiceInsights = new VoiceInsights(voiceLabsToken, session)
     }
 
     SpeechletResponse onLaunch(LaunchRequest request, Session session) throws SpeechletException {
@@ -26,7 +30,9 @@ class WorkoutSpeechlet implements Speechlet {
         log.info("Intent: ${request?.intent?.name} for request: ${request.getRequestId()} with session: ${session.getSessionId()}")
         log.info("onIntent requestId={}, sessionId={}", request.getRequestId(),
                 session.getSessionId());
-        return intentManager.processIntent(request)
+        def response =  intentManager.processIntent(request)
+        voiceInsights.track(request?.intent?.name, request?.intent?.slots, response?.outputSpeech)
+        return response
     }
 
     void onSessionEnded(SessionEndedRequest request, Session session) throws SpeechletException {
