@@ -111,6 +111,7 @@ class IntentManager {
 \t1 <break time="600ms"/>
 \tStop!
 \t<p>Congratulations! Your 5-minute plank workout is complete! See you tomorrow!</p>
+\t<p>Please, review the skill on Amazon!</p>
 </speak>'''
 
 
