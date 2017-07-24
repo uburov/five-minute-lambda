@@ -2,6 +2,12 @@ DefaultWelcomeIntent	good day
 DefaultWelcomeIntent	good evening
 DefaultWelcomeIntent	hello
 DefaultWelcomeIntent	hi
+DefaultWelcomeIntent	Hallo
+DefaultWelcomeIntent    Schönen Tag
+DefaultWelcomeIntent    guten Morgen
+DefaultWelcomeIntent    guten Abend
+DefaultWelcomeIntent    guten Nachmittag
+DefaultWelcomeIntent    guten Tag
 Help	help
 Help	help me
 Help	i don't know
@@ -10,20 +16,33 @@ Help	i don't know what to do
 Help	i don't understand
 Help	support
 Help	what can you do
+Help    Hilfe
+Help    was kannst du tun
+Help    ich weiß es nicht
 Cancel	cancel
+Cancel  stornieren
+Cancel  Ausfahrt
 Cancel	exit
+Cancel  Nicht
+Cancel  Nein
+Cancel  ich bin nicht bereit
 Cancel	i am not ready
 Cancel	no
 Cancel	no i am not ready
 Cancel	no, i am not ready
 Cancel	not ready
+Cancel  nicht bereit
 Cancel	quit
 Cancel	shutup
 Cancel	stop
 Ready	begin
+Ready   Ich bin fertig
 Ready	i am ready
 Ready	i am ready to begin
+Ready   Ich bin bereit zu beginnen
 Ready	i am ready to start
+Ready   Lasst uns beginnen
+Ready   lass uns gehen
 Ready	i m ready
 Ready	i'm ready
 Ready	let s go
