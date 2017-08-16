@@ -23,7 +23,7 @@ class WorkoutSpeechlet implements Speechlet {
     SpeechletResponse onLaunch(LaunchRequest request, Session session) throws SpeechletException {
         log.info("onLaunch: requestId={}, sessionId={}", request.getRequestId(),
                 session.getSessionId());
-        return intentManager.welcomeText
+        return intentManager.getWelcomeText(request.locale)
     }
 
     SpeechletResponse onIntent(IntentRequest request, Session session) throws SpeechletException {

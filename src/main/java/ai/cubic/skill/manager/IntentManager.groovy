@@ -264,10 +264,13 @@ class IntentManager {
     public SpeechletResponse processIntent(IntentRequest request) {
         switch (request?.intent?.name) {
             case 'Help':
+            case 'AMAZON.HelpIntent':
                 return getHelpText(request.locale)
             case 'Ready':
                 return getWorkout(request.locale)
             case 'Cancel':
+            case 'AMAZON.StopIntent':
+            case 'AMAZON.CancelIntent':
                 return getCancelText(request.locale)
             default:
                 return getWelcomeText(request.locale)
