@@ -225,7 +225,7 @@ class IntentManager {
         def repromptSpeech = new PlainTextOutputSpeech()
         repromptSpeech.text = locale.equals(Locale.GERMANY) ? WELCOME_REPROMPT_DE : WELCOME_REPROMPT
         reprompt.setOutputSpeech(repromptSpeech)
-        return SpeechletResponse.newAskResponse(out, reprompt, createCard())
+        return SpeechletResponse.newAskResponse(out, reprompt, createCard(locale))
     }
 
     public SpeechletResponse getWorkout(Locale locale) {
@@ -241,13 +241,13 @@ class IntentManager {
         def repromptSpeech = new PlainTextOutputSpeech()
         repromptSpeech.text = locale.equals(Locale.GERMANY) ? HELP_REPROMPT_DE : HELP_REPROMPT
         reprompt.outputSpeech = repromptSpeech
-        return SpeechletResponse.newAskResponse(outputSpeech, reprompt, createCard())
+        return SpeechletResponse.newAskResponse(outputSpeech, reprompt, createCard(locale))
     }
 
-    private StandardCard createCard() {
+    private StandardCard createCard(Locale locale) {
         def card = new StandardCard()
-        card.title = 'Workout plan'
-        card.text = 'Plank exercises'
+        card.title = locale.equals(Locale.GERMANY) ? 'Trainingsplan' : 'Workout plan'
+        card.text = locale.equals(Locale.GERMANY) ? 'Plank Übungen' :'Plank exercises'
         def image = new Image()
         image.largeImageUrl = 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
         image.smallImageUrl = 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
