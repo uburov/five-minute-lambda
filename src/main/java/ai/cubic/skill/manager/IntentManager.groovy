@@ -249,8 +249,8 @@ class IntentManager {
         card.title = locale.equals(Locale.GERMANY) ? 'Trainingsplan' : 'Workout plan'
         card.text = locale.equals(Locale.GERMANY) ? 'Plank Übungen' :'Plank exercises'
         def image = new Image()
-        image.largeImageUrl = 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
-        image.smallImageUrl = 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
+        image.largeImageUrl = locale.equals(Locale.GERMANY) ? 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises_de.jpg' : 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
+        image.smallImageUrl = locale.equals(Locale.GERMANY) ? 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises_de.jpg' : 'https://s3.amazonaws.com/cubic.resources.skills/five_min_plank/excercises.jpg'
         card.image = image
         card
     }
